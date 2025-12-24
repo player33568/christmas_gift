@@ -53,3 +53,4 @@ function toggleNote() {
   document.getElementById("notePanel").classList.toggle("open");
 }
 
+
