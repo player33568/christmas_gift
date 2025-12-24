@@ -186,4 +186,41 @@ body {
   background-size: 35px 35px;
   animation: blink 1s infinite alternate;
 }
+/* 📝 Note Button */
+.note-btn {
+  position: fixed;
+  right: 20px;
+  top: 40%;
+  padding: 12px 18px;
+  background: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1500;
+}
+
+/* 💌 Note Panel */
+#notePanel {
+  position: fixed;
+  right: -320px;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background: #fff0f5;
+  color: #b30059;
+  padding: 25px;
+  transition: right 0.4s ease;
+  z-index: 2000;
+}
+
+#notePanel h2 {
+  margin-top: 40px;
+}
+
+#notePanel.open {
+  right: 0;
+}
+
 
