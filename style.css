@@ -186,20 +186,20 @@ body {
   background-size: 35px 35px;
   animation: blink 1s infinite alternate;
 }
-/* 📝 Note Button */
 .note-btn {
   position: fixed;
   right: 20px;
-  top: 40%;
-  padding: 12px 18px;
+  bottom: 20px;
+  padding: 12px 20px;
   background: #ff69b4;
   color: white;
   border: none;
-  border-radius: 25px;
+  border-radius: 30px;
   font-size: 16px;
   cursor: pointer;
   z-index: 1500;
 }
+
 /* 💌 Note Panel (FIXED) */
 #notePanel {
   position: fixed;
@@ -218,6 +218,7 @@ body {
 #notePanel.open {
   right: 0;
 }
+
 
 
 
