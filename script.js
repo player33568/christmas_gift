@@ -51,6 +51,37 @@ function closePopup() {
 function toggleNote() {
   document.getElementById("notePanel").classList.toggle("open");
 }
+// 👉👈 Swipe detection for Note Panel
+let startX = 0;
+let endX = 0;
+
+document.addEventListener("touchstart", function (e) {
+  startX = e.touches[0].clientX;
+});
+
+document.addEventListener("touchmove", function (e) {
+  endX = e.touches[0].clientX;
+});
+
+document.addEventListener("touchend", function () {
+  const note = document.getElementById("notePanel");
+  const swipeDistance = endX - startX;
+
+  // Swipe LEFT → Open note
+  if (swipeDistance < -80) {
+    note.classList.add("open");
+  }
+
+  // Swipe RIGHT → Close note
+  if (swipeDistance > 80) {
+    note.classList.remove("open");
+  }
+
+  startX = 0;
+  endX = 0;
+});
+
+
 
 
 
