@@ -48,3 +48,8 @@ function closePopup() {
     document.getElementById("popup").style.display = "none";
     document.getElementById("bgMusic").play();
 }
+// 📝 Toggle Love Note
+function toggleNote() {
+  document.getElementById("notePanel").classList.toggle("open");
+}
+
