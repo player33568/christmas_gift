@@ -126,3 +126,64 @@ body {
     from { transform: scale(0.6); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
 }
+/* 🎄 Side Tree */
+.side-tree {
+  position: fixed;
+  right: 20px;
+  bottom: 60px;
+  z-index: 1000;
+  transform: scale(0.7);
+}
+
+.side-tree .layer {
+  width: 0;
+  height: 0;
+  margin: auto;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 100px solid #1faa6a;
+}
+
+.side-tree .layer.two {
+  margin-top: -30px;
+  border-left-width: 90px;
+  border-right-width: 90px;
+  border-bottom-width: 120px;
+}
+
+.side-tree .layer.three {
+  margin-top: -40px;
+  border-left-width: 110px;
+  border-right-width: 110px;
+  border-bottom-width: 140px;
+}
+
+.side-tree .trunk {
+  width: 35px;
+  height: 45px;
+  background: #5c3a21;
+  margin: auto;
+}
+
+.side-tree .star {
+  text-align: center;
+  font-size: 28px;
+  animation: twinkle 1.5s infinite;
+}
+
+/* ✨ Blinking Lights */
+.side-tree .lights {
+  position: absolute;
+  width: 220px;
+  height: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  background:
+    radial-gradient(circle, red 2px, transparent 3px),
+    radial-gradient(circle, yellow 2px, transparent 3px),
+    radial-gradient(circle, pink 2px, transparent 3px),
+    radial-gradient(circle, cyan 2px, transparent 3px);
+  background-size: 35px 35px;
+  animation: blink 1s infinite alternate;
+}
+
