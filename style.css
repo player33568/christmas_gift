@@ -219,6 +219,10 @@ body {
   right: 0;
 }
 
+h1, h2, p {
+  text-shadow: 0 2px 5px rgba(255,105,180,0.3);
+}
+
 
 
 
